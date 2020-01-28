@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "GPAchecker",
+  "version": "0.1",
+  "description": "twinsの成績欄からGPAを自動計算する",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twins.tsukuba.ac.jp/campusweb/campusportal.do?page=main&tabId=si"
+      ],
+      "js": ["contents.js"]
+    }
+  ]
+}
